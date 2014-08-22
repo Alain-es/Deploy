@@ -1,0 +1,22 @@
+﻿<form novalidate name="settingsForm"
+    ng-controller="Deploy.DeployTree.DeployCreateController"
+    ng-submit="createTargetSite()"
+    val-form-manager>
+
+    <div class="umb-dialog-body">
+        <div class="umb-pane">
+
+            <label class="control-label" for="name">Target Site name</label>
+            <input name="siteName" type="text" class="bigInput input-large-type input-block-level" ng-model="targetSiteName" required val-highlight="hasError" />
+            <span class="help-inline" val-msg-for="siteName" val-toggle-msg="required" val-highlight="hasError">Required</span>
+            <div class="btn-toolbar pull-right umb-btn-toolbar">
+                <a class="btn btn-link" ng-click="cancel()">Cancel</a>
+                <button class="btn btn-primary" ng-disabled="actionInProgress">Create</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+

@@ -1,0 +1,19 @@
+<div class="umb-dialog umb-pane" ng-controller="Deploy.DeployTree.DeployDeleteController">
+    <div class="umb-dialog-body" auto-scale="90">
+
+        <p class="umb-abstract">
+            Are you sure you want to delete <strong>{{currentNode.name}}</strong> (all pending changes recorded will be also deleted)  ?
+        </p>
+
+        <umb-confirm on-confirm="delete" on-cancel="cancel">    
+        </umb-confirm>
+
+        <!--
+        <div data-ng-show="showDebug">
+            <br />
+            <div data-ng-show="showDebug">{{currentNode | json}}</div>
+        </div>
+        -->
+
+    </div>
+</div>

@@ -1,0 +1,12 @@
+﻿.umb-listview a {
+    text-decoration: none;
+}
+
+/*
+.umb-listview .selected i.icon, .umb-listview tr:hover i.icon {
+    display: none;
+}
+.umb-listview .selected input[type="checkbox"], .umb-listview tr:hover input[type="checkbox"] {
+    display: inline-block !important;
+}
+*/

@@ -1,0 +1,14 @@
+﻿{   
+    javascript: [
+		'~/App_Plugins/Deploy/BackOffice/Dashboard/deploy.dashboard.controller.js', 
+		'~/App_Plugins/Deploy/BackOffice/DeployTree/deploy.deploytree.create.controller.js',
+		'~/App_Plugins/Deploy/BackOffice/DeployTree/deploy.deploytree.edit.controller.js',
+		'~/App_Plugins/Deploy/BackOffice/DeployTree/deploy.deploytree.delete.controller.js',
+		'~/App_Plugins/Deploy/BackOffice/DeployTree/deploy.deploytree.settings.controller.js',
+		'~/App_Plugins/Deploy/deploy.resource.js'
+    ],
+
+    css: [
+		'~/App_Plugins/Deploy/deploy.listview.css'
+    ]
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>Deploy.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Deploy.dll</orgName>
+    </file>
+    <file>
+      <guid>package.manifest</guid>
+      <orgPath>/App_Plugins/Deploy</orgPath>
+      <orgName>package.manifest</orgName>
+    </file>
+    <!--
+    <file>
+      <guid>deploy.resource.js</guid>
+      <orgPath>/App_Plugins/Deploy/</orgPath>
+      <orgName>deploy.resource.js</orgName>
+    </file>
+    <file>
+      <guid>deploy.listview.css</guid>
+      <orgPath>/App_Plugins/Deploy/</orgPath>
+      <orgName>deploy.listview.css</orgName>
+    </file>
+    <file>
+      <guid>deploy.deploytree.edit.controller.js</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>deploy.deploytree.edit.controller.js</orgName>
+    </file>
+    <file>
+      <guid>edit.html</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>edit.html</orgName>
+    </file>
+    <file>
+      <guid>deploy.deploytree.settings.controller.js</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>deploy.deploytree.settings.controller.js</orgName>
+    </file>
+    <file>
+      <guid>settings.html</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>settings.html</orgName>
+    </file>
+    <file>
+      <guid>deploy.deploytree.create.controller.js</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>deploy.deploytree.create.controller.js</orgName>
+    </file>
+    <file>
+      <guid>create.html</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>create.html</orgName>
+    </file>
+    <file>
+      <guid>deploy.deploytree.delete.controller.js</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>deploy.deploytree.delete.controller.js</orgName>
+    </file>
+    <file>
+      <guid>delete.html</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/DeployTree</orgPath>
+      <orgName>delete.html</orgName>
+    </file>
+    <file>
+      <guid>deploy.dashboard.html</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/Dashboard</orgPath>
+      <orgName>deploy.dashboard.html</orgName>
+    </file>
+    <file>
+      <guid>deploy.dashboard.controller.js</guid>
+      <orgPath>/App_Plugins/Deploy/BackOffice/Dashboard</orgPath>
+      <orgName>deploy.dashboard.controller.js</orgName>
+    </file>
+    -->
+  </files>
+  <info>
+    <package>
+      <name>Deploy</name>
+      <version>0.4.0</version>
+      <license url="http://opensource.org/licenses/MIT">MIT License</license>
+      <url>Deploy</url>
+      <requirements>
+        <major>7</major>
+        <minor>1</minor>
+        <patch>4</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Deploy</name>
+      <website>-</website>
+    </author>
+    <readme><![CDATA[Deploy v0.4.0 requires Umbraco v7.1.4 or above]]></readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros />
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions>
+    <Action runat="install" alias="addDashboardSection" dashboardAlias="Deploy">
+      <section>
+        <areas>
+          <area>Deploy</area>
+        </areas>
+        <tab caption="Deploy Management">
+          <control>/App_Plugins/Deploy/BackOffice/Dashboard/_dashboard.html</control>
+        </tab>
+      </section>
+    </Action>
+  </Actions>
+</umbPackage>

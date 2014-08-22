@@ -1,0 +1,51 @@
+﻿<form novalidate name="settingsForm"
+    ng-controller="Deploy.DeployTree.DeploySettingsController"
+    ng-show="loaded"
+    ng-submit="save()"
+    val-form-manager>
+
+    <umb-panel>
+
+        <umb-header tabs="tabs">
+            <div class="umb-headline-editor-wrapper span12 ng-scope">
+                <h1 class="ng-binding"><b>{{settingsModel.SiteName}}</b></h1>
+            </div>
+        </umb-header>
+ 
+        <umb-tab-view>
+            <umb-tab id="tab1" rel="Settings">
+                <div class="umb-pane">
+                   				
+                    <umb-property property="properties.siteNameEditor">
+                        <input type="text" name="siteName" ng-model="settingsModel.SiteName"
+                            class="input-large umb-textstring textstring" 
+                            required  />
+                        <span class="help-inline" val-msg-for="siteName" val-toggle-msg="required">Required</span>
+			        </umb-property>
+                    				
+                    <umb-property property="properties.urlEditor">
+                        <input type="text" name="url" ng-model="settingsModel.Url"
+                            class="input-large umb-textstring textstring" />
+			        </umb-property>
+                    				
+                    <umb-property property="properties.securityKeyEditor">
+                        <input type="text" name="securityKey" ng-model="settingsModel.SecurityKey"
+                            class="input-large umb-textstring textstring" />
+			        </umb-property>
+      
+                    <div class="umb-tab-buttons" detect-fold ng-class="{'umb-dimmed': busy}">
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success" ng-disabled="actionInProgress">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </umb-tab>
+        </umb-tab-view>
+
+    </umb-panel>
+
+</form>
+ 
